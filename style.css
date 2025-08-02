@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 6rem;
+}
+
+.choices button{
+    padding: 10px 20px;
+    font-size: 7.5rem;
+    margin: 50px;
+    margin-top:2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 250px;
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.choices button:hover{
+    background-color: hsl(211, 100%, 65%);
+}
+
+.scoreDisplay{
+    margin-top:10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#resultDisplay{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.greenText{
+    color: hsl(120, 100%, 25%);
+}
+
+.redText{
+    color: hsl(0, 100%, 50%);
+}
+
+#reset-btn{
+    padding: 10px 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid hsl(211, 100%, 50%);
+    border-radius: 5px;
+    background-color: white;
+    color: hsl(211, 100%, 50%);
+    transition: background-color 0.3s ease;
+    transition: scale 0.3s ease-in-out;
+}
+
+#reset-btn:hover{
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .choices button {
+        font-size: 3rem;
+        padding: 8px 16px;
+        margin: 20px;
+    }
+    
+    .scoreDisplay, #resultDisplay {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .choices button {
+        font-size: 2.5rem;
+        padding: 6px 12px;
+        margin: 10px;
+    }
+    
+    .scoreDisplay, #resultDisplay {
+        font-size: 1rem;
+    }
+    
+}
